@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ba17183d.css",
-    "main.js": "/portfolio/static/js/main.ee36cd20.js",
+    "main.css": "/portfolio/static/css/main.3eb1a74f.css",
+    "main.js": "/portfolio/static/js/main.17fea9b1.js",
     "static/js/27.2163fce8.chunk.js": "/portfolio/static/js/27.2163fce8.chunk.js",
     "static/media/project1.png": "/portfolio/static/media/project1.12611d6af4c1757cd38c.png",
+    "static/media/hero_bg.webp": "/portfolio/static/media/hero_bg.6f372bf2da474beac9cb.webp",
+    "static/media/beam_of_light.png": "/portfolio/static/media/beam_of_light.baccbb3fed0569161111.png",
     "static/media/project2.jpg": "/portfolio/static/media/project2.3805daab8f3fe67df88f.jpg",
     "static/media/project3.png": "/portfolio/static/media/project3.4740ada9c3736b362372.png",
+    "static/media/astronaut.png": "/portfolio/static/media/astronaut.cffc7e811367b173d326.png",
     "static/media/programmer.jpg": "/portfolio/static/media/programmer.42caa663fef4fa3a498c.jpg",
+    "static/media/RobotoFlex-Regular.ttf": "/portfolio/static/media/RobotoFlex-Regular.c183d3252aeeb1807734.ttf",
     "index.html": "/portfolio/index.html"
   },
   "entrypoints": [
-    "static/css/main.ba17183d.css",
-    "static/js/main.ee36cd20.js"
+    "static/css/main.3eb1a74f.css",
+    "static/js/main.17fea9b1.js"
   ]
 }
