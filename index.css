@@ -600,6 +600,7 @@ video {
   margin: 0px;
 }
 
+
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -641,6 +642,14 @@ video {
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-\[470px\] {
+  width: 470px;
+}
+
+.w-\[654px\] {
+  width: 654px;
 }
 
 .max-w-\[500px\] {
@@ -689,6 +698,10 @@ video {
 
 .overflow-scroll {
   overflow: scroll;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 
 .border-b {
