@@ -56,6 +56,8 @@ p {
 }
 
 .scroll-element {
+  -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
   cursor: grab;
 }

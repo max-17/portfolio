@@ -630,8 +630,8 @@ video {
   width: 13rem;
 }
 
-.w-\[654px\] {
-  width: 654px;
+.w-\[670px\] {
+  width: 670px;
 }
 
 .w-auto {
@@ -641,10 +641,6 @@ video {
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
-}
-
-.w-\[670px\] {
-  width: 670px;
 }
 
 .max-w-\[500px\] {
@@ -773,9 +769,10 @@ p {
 
 .scroll-element {
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
   cursor: grab;
+  
 }
 
 .scroll-element > * {
