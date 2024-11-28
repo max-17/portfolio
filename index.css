@@ -600,7 +600,6 @@ video {
   margin: 0px;
 }
 
-
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -644,12 +643,8 @@ video {
   width: fit-content;
 }
 
-.w-\[470px\] {
-  width: 470px;
-}
-
-.w-\[654px\] {
-  width: 654px;
+.w-\[670px\] {
+  width: 670px;
 }
 
 .max-w-\[500px\] {
@@ -700,10 +695,6 @@ video {
   overflow: scroll;
 }
 
-.overflow-x-scroll {
-  overflow-x: scroll;
-}
-
 .border-b {
   border-bottom-width: 1px;
 }
@@ -742,9 +733,9 @@ html {
 
 * {
   color: rgb(210, 210, 210);
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   letter-spacing: 0.7px;
-  transition: all 0.3s  ease;
+  transition: all 0.3s ease;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -780,7 +771,18 @@ p {
   letter-spacing: normal;
 }
 
-.sub-section{
+.scroll-element {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: grab;
+}
+
+.scroll-element > * {
+  pointer-events: none;
+}
+
+.sub-section {
   min-width: 400px;
   display: flex;
   flex-wrap: wrap;
@@ -795,7 +797,7 @@ a {
 
 .main-text {
   align-self: center;
-  background: radial-gradient(circle, #fff,#000000);
+  background: radial-gradient(circle, #fff, #000000);
   -webkit-background-clip: text;
   background-size: 300%;
   background-position: center;
@@ -823,7 +825,7 @@ a {
 @keyframes animateBackgroundSize {
   0% {
     opacity: 0%;
-    background-position: left
+    background-position: left;
   }
 
   50% {
@@ -869,5 +871,3 @@ svg {
     width: 500px;
   }
 }
-
-    
