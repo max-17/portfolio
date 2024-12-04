@@ -630,8 +630,8 @@ video {
   width: 13rem;
 }
 
-.w-\[670px\] {
-  width: 670px;
+.w-\[750px\] {
+  width: 750px;
 }
 
 .w-auto {
@@ -643,8 +643,20 @@ video {
   width: fit-content;
 }
 
+.w-\[700px\] {
+  width: 700px;
+}
+
 .max-w-\[500px\] {
   max-width: 500px;
+}
+
+.max-w-\[700px\] {
+  max-width: 700px;
+}
+
+.max-w-\[750px\] {
+  max-width: 750px;
 }
 
 .flex-row {
@@ -772,7 +784,6 @@ p {
   -moz-user-select: none;
   user-select: none;
   cursor: grab;
-  
 }
 
 .scroll-element > * {
