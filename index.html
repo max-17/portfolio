@@ -25,8 +25,8 @@
   <title>Makhmudjon Jamoldinov | Full Stack Web Developer</title>
 </head>
 
-<body class="p-2">
-  <section id="s-1" class="main">
+<body class="p-2 container  mx-auto">
+  <section class="main flex min-h-[100dvh]" id="hero">
     <h1 class="main-text text-center">
       Full-Stack
       <br />
@@ -34,166 +34,163 @@
     </h1>
   </section>
 
-  <section class="container w-auto mx-auto" id="s-2">
-    <div class="flex flex-wrap gap-12 w-fit mx-auto">
-      <h1 class="mx-auto w-52">About</h1>
-      <div class="w-fit mx-auto flex flex-col max-w-[500px] gap-y-12">
+  <section class="md:flex w-full gap-x-10 min-h-[100dvh]" id="section1">
+    <h1 class="max-md:mx-auto sm:ml-auto w-fit mb-10">About</h1>
+    <div class="max-md:mx-auto sm:mr-auto w-fit flex flex-col max-w-[500px] gap-y-12">
 
 
-        <p>
-          I am a web developer who thrives on solving intricate problems, embracing challenging programming tasks, and
-          crafting minimalistic designs. Always eager to try out new
-          things in web space and to comtribute to Open Source.
-          Also, casually play DOTA 2 and Apex Legends.
-        </p>
-        <div class="flex flex-wrap justify-evenly">
+      <p>
+        I am a web developer who thrives on solving intricate problems, embracing challenging programming tasks, and
+        crafting minimalistic designs. Always eager to try out new
+        things in web space and to comtribute to Open Source.
+        Also, casually play DOTA 2 and Apex Legends.
+      </p>
+      <div class="flex justify-evenly">
 
-          <div class="stats-card" id="code-time-stat">
-            <div class="stat-category">
-              <h3>Coding Time</h3>
-              <div>
-                <p class="stat-value">500 hrs</p>
-                <small>Total</small>
-              </div>
-              <div>
-                <p class="stat-value">4 hrs/day</p>
-                <small>Daily Average</small>
-              </div>
+        <div class="stats-card" id="code-time-stat">
+          <div class="stat-category">
+            <h3>Coding Time</h3>
+            <div>
+              <p class="stat-value">500 hrs</p>
+              <small>Total</small>
             </div>
-          </div>
-
-          <div class="stats-card" id="languages-stat">
-            <div class="stat-category">
-              <h3>Languages</h3>
-              <div>
-                <p class="stat-value">80 %</p>
-                <small class="stat-name">Typescript</small>
-              </div>
-              <div>
-                <p class="stat-value">10 %</p>
-                <small class="stat-name">Prisma</small>
-              </div>
+            <div>
+              <p class="stat-value">4 hrs/day</p>
+              <small>Daily Average</small>
             </div>
           </div>
         </div>
-        <div>
-          <p class="mb-3 p-0 border-b border-white">Activity</p>
-          <div class="flex flex-row-reverse overflow-scroll relative h-[175px] scroll-element">
 
-            <div class="absolute w-[900px]">
-              <image src="https://wakatime.com/share/@maxmud_dev/9620a783-dce7-40f6-ad6a-7caf95613670.svg" />
+        <div class="stats-card" id="languages-stat">
+          <div class="stat-category">
+            <h3>Languages</h3>
+            <div>
+              <p class="stat-value">80 %</p>
+              <small class="stat-name">Typescript</small>
             </div>
-
+            <div>
+              <p class="stat-value">10 %</p>
+              <small class="stat-name">Prisma</small>
+            </div>
           </div>
+        </div>
+      </div>
+      <div>
+        <p class="mb-3 p-0 border-b border-white">Activity</p>
+        <div class="flex flex-row-reverse overflow-scroll relative h-[175px] scroll-element">
+
+          <div class="absolute w-[900px]">
+            <image src="https://wakatime.com/share/@maxmud_dev/9620a783-dce7-40f6-ad6a-7caf95613670.svg" />
+          </div>
+
         </div>
       </div>
     </div>
   </section>
 
-  <section class="container w-auto mx-auto" id="s-3">
-    <div class="flex flex-wrap gap-12 w-fit mx-auto">
-      <h1 class="mx-auto w-52">Works</h1>
-      <div class="w-fit mx-auto flex flex-col max-w-[500px] gap-y-12">
-        <h2> <a class="p-0 m-0" href=" https://oy-gul.uz">
-
-            Oy-gul.uz (chat) - chat application for processing and tracking orders
-          </a>
-        </h2>
-        <p>
-          I built a real-time chat for oy-gul.uz, enabling order tracking, processing, and image/message exchange. The
-          chat leverages a robust backend architecture and a WebSocket engine, ensuring efficient and scalable real-time
-          communication through a Redis-powered queuing system. This design enables seamless integration with native
-          applications, ensuring a seamless, cross-platform developer experience.
-        </p>
-        <h2> <a class="p-0 m-0" href=" https://emojigram-phi.vercel.app/">
-
-            Emojigram - social media where you can only post emojies
-          </a>
-        </h2>
-        <p>
-          Creating Emojigram was a captivating journey. Fascinated by the T3 Stack’s modularity, ease of use, type
-          safety, and scalability, I started building a project using it. As I delved deeper into the project, I
-          expanded my knowledge, learning about Zod, react-hot-toast, OAuth, and more. This journey was more than just
-          building an application; it was a a 'time well-spent' on my personal growth and skill refinement. It marked a
-          notable advancement in my journey as a developer.
-        </p>
-        <h2><a href="https://estore-nextjs-prisma-uploadthings.vercel.app">
-            Estore - mobile first online store
-          </a></h2>
-        <p>
-          The main technology I explored and implemented was the newly released Next.js 14 and API changes to app
-          directory. This allowed me to structure my project more efficiently and leverage the latest features of
-          Next.js. This project was build with Prisma, Supabase, @mui/x-charts, Daisy UI, Uploadthing besides
-          Nextjs. I learned database management and services, authentication, interactive charts and how to handle file
-          uploads. It was a significant step forward, reinforcing my ability to adapt to different project requirements
-          and continually learn new technologies.
-        </p>
-        <h2>
-          <a href="https://max-17.github.io/portfolio/">
-            My Portfolio - Ispriper by brutalist web design, raw and minimalistic.
-          </a>
-        </h2>
-        <p>
-          In this project I was more focused on minimalistic design, functionality and availability of my portfolio. I
-          leared a lot
-          of thing about how to make a plain old &lt;h1&gt;s and &lt;p&gt;s look good. this enabled me to see a whole
-          new world of desin choices and made me realise how 'less design' is 'best design'
-        </p>
-      </div>
-    </div>
-  </section>
 
 
-  <section class="w-auto mx-auto" id="s-4">
-    <div class="flex flex-wrap gap-12 w-fit mx-auto">
-      <h1 class="w-52 mx-auto">Links</h1>
-      <div class="mx-auto flex flex-row flex-wrap gap-y-5 items-center justify-around md:w-[500px] max-w-[500px]">
 
-        <a class="w-fit text-[18px] mx-3" href="mailto:makhmudjon.17@gmail.com">
-          <svg class="w-fit inline-block" xmlns="http://www.w3.org/2000/svg" width="2.2em" height="2.2em"
-            viewBox="2 1 18 18">
-            <path fill="currentColor"
-              d="M19 14.5v-9c0-.83-.67-1.5-1.5-1.5H3.49c-.83 0-1.5.67-1.5 1.5v9c0 .83.67 1.5 1.5 1.5H17.5c.83 0 1.5-.67 1.5-1.5m-1.31-9.11c.33.33.15.67-.03.84L13.6 9.95l3.9 4.06c.12.14.2.36.06.51c-.13.16-.43.15-.56.05l-4.37-3.73l-2.14 1.95l-2.13-1.95l-4.37 3.73c-.13.1-.43.11-.56-.05c-.14-.15-.06-.37.06-.51l3.9-4.06l-4.06-3.72c-.18-.17-.36-.51-.03-.84s.67-.17.95.07l6.24 5.04l6.25-5.04c.28-.24.62-.4.95-.07" />
-          </svg>
-          Email</a>
-        <a class="w-fit text-[18px] mx-3" href="https://t.me/makhmud17">
-          <svg class="w-fit inline-block" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
-            viewBox="0 0 24 24">
-            <path fill="currentColor"
-              d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12a12 12 0 0 0 12-12A12 12 0 0 0 12 0zm4.962 7.224c.1-.002.321.023.465.14a.5.5 0 0 1 .171.325c.016.093.036.306.02.472c-.18 1.898-.962 6.502-1.36 8.627c-.168.9-.499 1.201-.82 1.23c-.696.065-1.225-.46-1.9-.902c-1.056-.693-1.653-1.124-2.678-1.8c-1.185-.78-.417-1.21.258-1.91c.177-.184 3.247-2.977 3.307-3.23c.007-.032.014-.15-.056-.212s-.174-.041-.249-.024q-.159.037-5.061 3.345q-.72.495-1.302.48c-.428-.008-1.252-.241-1.865-.44c-.752-.245-1.349-.374-1.297-.789q.04-.324.893-.663q5.247-2.286 6.998-3.014c3.332-1.386 4.025-1.627 4.476-1.635" />
-          </svg>
 
-          Telegram
+  <section class="md:flex w-full gap-x-10 min-h-[100dvh]" id="section2">
+    <h1 class="max-md:mx-auto sm:ml-auto w-fit mb-10">Work</h1>
+    <div class="max-md:mx-auto sm:mr-auto w-fit flex flex-col max-w-[500px] gap-y-12">
+      <h2> <a class="p-0 m-0" href=" https://oy-gul.uz">
+
+          Oy-gul.uz (chat) - chat application for processing and tracking orders
         </a>
-        <a class="w-fit text-[18px] mx-3" href='https://github.com/max-17'>
-          <svg class="w-fit inline-block" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
-            viewBox="0 0 24 24">
-            <g fill="none">
-              <g clip-path="url(#akarIconsGithubFill0)">
-                <path fill="currentColor" fill-rule="evenodd"
-                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12"
-                  clip-rule="evenodd" />
-              </g>
-              <defs>
-                <clipPath id="akarIconsGithubFill0">
-                  <path fill="#fff" d="M0 0h24v24H0z" />
-                </clipPath>
-              </defs>
+      </h2>
+      <p>
+        I built a real-time chat for oy-gul.uz, enabling order tracking, processing, and image/message exchange. The
+        chat leverages a robust backend architecture and a WebSocket engine, ensuring efficient and scalable real-time
+        communication through a Redis-powered queuing system. This design enables seamless integration with native
+        applications, ensuring a seamless, cross-platform developer experience.
+      </p>
+      <h2> <a class="p-0 m-0" href=" https://emojigram-phi.vercel.app/">
+
+          Emojigram - social media where you can only post emojies
+        </a>
+      </h2>
+      <p>
+        Creating Emojigram was a captivating journey. Fascinated by the T3 Stack’s modularity, ease of use, type
+        safety, and scalability, I started building a project using it. As I delved deeper into the project, I
+        expanded my knowledge, learning about Zod, react-hot-toast, OAuth, and more. This journey was more than just
+        building an application; it was a a 'time well-spent' on my personal growth and skill refinement. It marked a
+        notable advancement in my journey as a developer.
+      </p>
+      <h2><a href="https://estore-nextjs-prisma-uploadthings.vercel.app">
+          Estore - mobile first online store
+        </a></h2>
+      <p>
+        The main technology I explored and implemented was the newly released Next.js 14 and API changes to app
+        directory. This allowed me to structure my project more efficiently and leverage the latest features of
+        Next.js. This project was build with Prisma, Supabase, @mui/x-charts, Daisy UI, Uploadthing besides
+        Nextjs. I learned database management and services, authentication, interactive charts and how to handle file
+        uploads. It was a significant step forward, reinforcing my ability to adapt to different project requirements
+        and continually learn new technologies.
+      </p>
+      <h2>
+        <a href="https://max-17.github.io/portfolio/">
+          My Portfolio - Ispriper by brutalist web design, raw and minimalistic.
+        </a>
+      </h2>
+      <p>
+        In this project I was more focused on minimalistic design, functionality and availability of my portfolio. I
+        leared a lot
+        of thing about how to make a plain old &lt;h1&gt;s and &lt;p&gt;s look good. this enabled me to see a whole
+        new world of desin choices and made me realise how 'less design' is 'best design'
+      </p>
+    </div>
+  </section>
+
+
+  <section class="md:flex-row flex flex-col items-center justify-center w-full gap-x-10 min-h-[100dvh]" id="section3">
+
+    <h1 class="max-md:mx-auto sm:ml-auto w-fit mb-10">Links</h1>
+    <div class="max-md:mx-auto sm:mr-auto w-full grid max-sm:grid-cols-2 sm:flex justify-evenly max-w-[500px] gap-y-12">
+
+      <a class="col-auto w-fit text-nowrap text-[18px]" href="mailto:makhmudjon.17@gmail.com">
+        <svg class="w-fit inline-block" xmlns="http://www.w3.org/2000/svg" width="2.2em" height="2.2em"
+          viewBox="2 1 18 18">
+          <path fill="currentColor"
+            d="M19 14.5v-9c0-.83-.67-1.5-1.5-1.5H3.49c-.83 0-1.5.67-1.5 1.5v9c0 .83.67 1.5 1.5 1.5H17.5c.83 0 1.5-.67 1.5-1.5m-1.31-9.11c.33.33.15.67-.03.84L13.6 9.95l3.9 4.06c.12.14.2.36.06.51c-.13.16-.43.15-.56.05l-4.37-3.73l-2.14 1.95l-2.13-1.95l-4.37 3.73c-.13.1-.43.11-.56-.05c-.14-.15-.06-.37.06-.51l3.9-4.06l-4.06-3.72c-.18-.17-.36-.51-.03-.84s.67-.17.95.07l6.24 5.04l6.25-5.04c.28-.24.62-.4.95-.07" />
+        </svg>
+        Email</a>
+      <a class="w-fit col-auto text-[18px] text-nowrap" href="https://t.me/makhmud17">
+        <svg class="w-fit inline-block" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+          <path fill="currentColor"
+            d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12a12 12 0 0 0 12-12A12 12 0 0 0 12 0zm4.962 7.224c.1-.002.321.023.465.14a.5.5 0 0 1 .171.325c.016.093.036.306.02.472c-.18 1.898-.962 6.502-1.36 8.627c-.168.9-.499 1.201-.82 1.23c-.696.065-1.225-.46-1.9-.902c-1.056-.693-1.653-1.124-2.678-1.8c-1.185-.78-.417-1.21.258-1.91c.177-.184 3.247-2.977 3.307-3.23c.007-.032.014-.15-.056-.212s-.174-.041-.249-.024q-.159.037-5.061 3.345q-.72.495-1.302.48c-.428-.008-1.252-.241-1.865-.44c-.752-.245-1.349-.374-1.297-.789q.04-.324.893-.663q5.247-2.286 6.998-3.014c3.332-1.386 4.025-1.627 4.476-1.635" />
+        </svg>
+
+        Telegram
+      </a>
+      <a class="w-fit col-auto text-nowrap text-[18px]" href='https://github.com/max-17'>
+        <svg class="w-fit inline-block" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+          <g fill="none">
+            <g clip-path="url(#akarIconsGithubFill0)">
+              <path fill="currentColor" fill-rule="evenodd"
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12"
+                clip-rule="evenodd" />
             </g>
-          </svg>
-          Github
-        </a>
+            <defs>
+              <clipPath id="akarIconsGithubFill0">
+                <path fill="#fff" d="M0 0h24v24H0z" />
+              </clipPath>
+            </defs>
+          </g>
+        </svg>
+        Github
+      </a>
 
-        <a class="w-fit text-[18px] mx-3" href="https://leetcode.com/u/max-17/">
-          <svg class="w-fit inline-block" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
-            viewBox="0 0 32 32">
-            <path fill="currentColor"
-              d="m21.469 23.907l-3.595 3.473c-.624.625-1.484.885-2.432.885s-1.807-.26-2.432-.885l-5.776-5.812c-.62-.625-.937-1.537-.937-2.485c0-.952.317-1.812.937-2.432l5.76-5.844c.62-.619 1.5-.859 2.448-.859s1.808.26 2.432.885l3.595 3.473c.687.688 1.823.663 2.536-.052c.708-.713.735-1.848.047-2.536l-3.473-3.511a6.8 6.8 0 0 0-3.261-1.787l3.287-3.333c.688-.687.667-1.823-.047-2.536s-1.849-.735-2.536-.052L4.553 13.968c-1.307 1.312-1.989 3.113-1.989 5.113c0 1.996.683 3.86 1.989 5.168l5.797 5.812c1.307 1.307 3.115 1.937 5.115 1.937c1.995 0 3.801-.683 5.109-1.989l3.479-3.521c.688-.683.661-1.817-.052-2.531s-1.849-.74-2.531-.052zm6.28-6.558H14.218c-.932 0-1.692.801-1.692 1.791c0 .991.76 1.797 1.692 1.797h13.531c.933 0 1.693-.807 1.693-1.797s-.76-1.791-1.693-1.791" />
-          </svg>
-          Leetcode
-        </a>
+      <a class="w-fit col-auto text-nowrap text-[18px]" href="https://leetcode.com/u/max-17/">
+        <svg class="w-fit inline-block" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 32 32">
+          <path fill="currentColor"
+            d="m21.469 23.907l-3.595 3.473c-.624.625-1.484.885-2.432.885s-1.807-.26-2.432-.885l-5.776-5.812c-.62-.625-.937-1.537-.937-2.485c0-.952.317-1.812.937-2.432l5.76-5.844c.62-.619 1.5-.859 2.448-.859s1.808.26 2.432.885l3.595 3.473c.687.688 1.823.663 2.536-.052c.708-.713.735-1.848.047-2.536l-3.473-3.511a6.8 6.8 0 0 0-3.261-1.787l3.287-3.333c.688-.687.667-1.823-.047-2.536s-1.849-.735-2.536-.052L4.553 13.968c-1.307 1.312-1.989 3.113-1.989 5.113c0 1.996.683 3.86 1.989 5.168l5.797 5.812c1.307 1.307 3.115 1.937 5.115 1.937c1.995 0 3.801-.683 5.109-1.989l3.479-3.521c.688-.683.661-1.817-.052-2.531s-1.849-.74-2.531-.052zm6.28-6.558H14.218c-.932 0-1.692.801-1.692 1.791c0 .991.76 1.797 1.692 1.797h13.531c.933 0 1.693-.807 1.693-1.797s-.76-1.791-1.693-1.791" />
+        </svg>
+        Leetcode
+      </a>
 
-      </div>
+    </div>
     </div>
 
   </section>
