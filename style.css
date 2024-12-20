@@ -21,7 +21,6 @@ html {
   transition: all 0.3s ease;
   margin: 0;
   padding: 0;
-  width: 100%;
 }
 
 h1 {
@@ -33,6 +32,9 @@ h1 {
 h2 {
   font-size: 26px;
   line-height: 1.2;
+}
+td {
+  width: 200px;
 }
 
 p {
@@ -107,13 +109,15 @@ a {
 }
 
 .stats-card {
-  width: 46%;
+  margin: auto;
+  width: 95%;
   display: inline-block;
   color: #ffffff;
   border-radius: 8px;
   padding: 10px;
   box-shadow: 0 0px 6px rgb(255, 255, 255);
   max-width: 300px;
+  display: block;
 }
 
 .stat-value {

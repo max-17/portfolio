@@ -27,7 +27,7 @@
 
 <body class="p-2 container  mx-auto">
   <section class="main flex min-h-[100dvh]" id="hero">
-    <h1 class="main-text text-center">
+    <h1 class="main-text text-center mx-auto">
       Full-Stack
       <br />
       Web Developer
@@ -40,51 +40,59 @@
 
 
       <p>
-        I am a web developer who thrives on solving intricate problems, embracing challenging programming tasks, and
+        I am a web developer who loves problem-solving, coding challenges, and
         crafting minimalistic designs. Always eager to try out new
         things in web space and to comtribute to Open Source.
         Also, casually play DOTA 2 and Apex Legends.
       </p>
-      <div class="flex justify-evenly">
+      <p>
+        <!-- TODO: add sklls with vertical scroll-->
+      </p>
 
-        <div class="stats-card" id="code-time-stat">
-          <div class="stat-category">
-            <h3>Coding Time</h3>
-            <div>
-              <p class="stat-value">500 hrs</p>
+      <table>
+        <tr class="w-full">
+
+          <td>
+
+            <div class="stats-card w-full" id="code-time-stat">
+
+              <h3>Coding Time</h3>
+
+              <p class="stat-value" id="total-hours">500 hrs</p>
               <small>Total</small>
-            </div>
-            <div>
-              <p class="stat-value">4 hrs/day</p>
+
+              <p class="stat-value" id="daily-avarage">4 hrs/day</p>
               <small>Daily Average</small>
+
             </div>
-          </div>
+
+          </td>
+          <td>
+
+            <div class="stats-card" id="languages-stat">
+
+              <h3>Languages</h3>
+
+              <p class="stat-value" id="lang-1-percent">80 %</p>
+              <small class="stat-name" id="lang-1-name">Typescript</small>
+              <p class="stat-value" id="lang-2-percent">10 %</p>
+              <small class="stat-name" id="lang-2-name">Prisma</small>
+
+            </div>
+          </td>
+        </tr>
+
+      </table>
+
+      <p class="mb-3 p-0 border-b border-white">Activity</p>
+      <div class="flex flex-row-reverse overflow-scroll relative h-[175px] scroll-element">
+
+        <div class="absolute w-[850px]">
+          <image class="w-full" src="https://wakatime.com/share/@maxmud_dev/9620a783-dce7-40f6-ad6a-7caf95613670.svg" />
         </div>
 
-        <div class="stats-card" id="languages-stat">
-          <div class="stat-category">
-            <h3>Languages</h3>
-            <div>
-              <p class="stat-value">80 %</p>
-              <small class="stat-name">Typescript</small>
-            </div>
-            <div>
-              <p class="stat-value">10 %</p>
-              <small class="stat-name">Prisma</small>
-            </div>
-          </div>
-        </div>
       </div>
-      <div>
-        <p class="mb-3 p-0 border-b border-white">Activity</p>
-        <div class="flex flex-row-reverse overflow-scroll relative h-[175px] scroll-element">
 
-          <div class="absolute w-[900px]">
-            <image src="https://wakatime.com/share/@maxmud_dev/9620a783-dce7-40f6-ad6a-7caf95613670.svg" />
-          </div>
-
-        </div>
-      </div>
     </div>
   </section>
 
@@ -209,8 +217,6 @@
     mainText.style.backgroundPosition = `${100 - moveX}% 0`;
   });
 
-  const languagesCard = document.getElementById('languages-stat');
-  const codeTimeCard = document.getElementById('code-time-stat');
 
   fetch('https://wakatime.com/share/@maxmud_dev/af7312a3-a597-4758-904e-0fb2515789df.json').then(
     async res => {
@@ -221,10 +227,9 @@
 
       const dailyAverage = codeTimeStats.grand_total.daily_average_including_other_language / 3600
 
-      const statValues = codeTimeCard.querySelectorAll('.stat-value')
 
-      statValues[0].innerText = `${Math.round(totalHours)} hrs`
-      statValues[1].innerText = `${Math.round(dailyAverage)} hrs/day`
+      document.getElementById('total-hours').innerText = `${Math.round(totalHours)} hrs`
+      document.getElementById('daily-avarage').innerText = `${Math.round(dailyAverage)} hrs/day`
 
     }
   );
@@ -234,14 +239,10 @@
     async res => {
       const languageStats = (await res.json()).data
 
-      const statValues = languagesCard.querySelectorAll('.stat-value')
-
-      const statNames = languagesCard.querySelectorAll('.stat-name')
-
-      statValues[0].innerText = `${languageStats[0].percent} %`
-      statNames[0].innerText = languageStats[0].name
-      statValues[1].innerText = `${languageStats[1].percent} %`
-      statNames[1].innerText = languageStats[1].name
+      document.getElementById('lang-1-percent').innerText = `${languageStats[0].percent} %`
+      document.getElementById('lang-1-name').innerText = languageStats[0].name
+      document.getElementById('lang-2-percent').innerText = `${languageStats[1].percent} %`
+      document.getElementById('lang-2-name').innerText = languageStats[1].name
     }
 
   );
