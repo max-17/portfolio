@@ -85,6 +85,10 @@ a {
   animation: fadeInAnimation 1s ease-in forwards;
 }
 
+#cv{
+  
+}
+
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
