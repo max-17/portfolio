@@ -33,6 +33,7 @@ h2 {
   font-size: 26px;
   line-height: 1.2;
 }
+
 td {
   width: 200px;
 }
@@ -52,9 +53,11 @@ p {
   user-select: none;
   cursor: grab;
 }
-.scroll-element > * {
+
+.scroll-element>* {
   pointer-events: none;
 }
+
 .sub-section {
   min-width: 400px;
   display: flex;
@@ -80,19 +83,38 @@ a {
   transition: background-position 0.1s;
 }
 
+
 .fade-in {
   opacity: 0;
   animation: fadeInAnimation 1s ease-in forwards;
 }
 
-#cv{
-  
+#cv {}
+
+#section1 {
+  transition: none !important;
+}
+
+.word {
+  color: rgb(130, 130, 130);
+  transition: color 0.2s ease;
+}
+
+.word.active {
+  color: #fff;
+}
+
+::selection {
+  -webkit-text-fill-color: black;
+  background: rgb(210, 210, 210);
+  color: black;
 }
 
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -103,9 +125,11 @@ a {
     opacity: 0%;
     background-position: left;
   }
+
   50% {
     background-position: left;
   }
+
   100% {
     background-position: center;
     opacity: 100%;
