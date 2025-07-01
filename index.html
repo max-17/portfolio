@@ -267,35 +267,77 @@
     scrollableElement.style.cursor = 'grab';
   });
 
-  gsap.registerPlugin(ScrollTrigger);
+  window.scrollTo(0, 0); // force scroll to top immediately
 
-  const textEl = document.getElementById("highlight-text");
-  const words = textEl.textContent.split(" ");
-  textEl.innerHTML = "";
+  window.addEventListener('load', () => {
+    // slight delay ensures scrollTo completes before pinning calculations
+    setTimeout(() => {
+      gsap.registerPlugin(ScrollTrigger);
 
-  const wordSpans = words.map(word => {
-    const span = document.createElement("span");
-    span.className = "word";
-    span.textContent = word;
-    textEl.appendChild(span);
-    textEl.append(" ");
-    return span;
+      const textEl = document.getElementById("highlight-text");
+      const words = textEl.textContent.split(" ");
+      textEl.innerHTML = "";
+
+      const wordSpans = words.map(word => {
+        const span = document.createElement("span");
+        span.className = "word";
+        span.textContent = word;
+        textEl.appendChild(span);
+        textEl.append(" ");
+        return span;
+      });
+
+      ScrollTrigger.create({
+        trigger: "#section1",
+        start: "top top",
+        end: `+=${wordSpans.length * 20}`,
+        scrub: true,
+        pin: "#section1",
+        anticipatePin: 1,
+        onUpdate: (self) => {
+          const index = Math.floor(self.progress * wordSpans.length);
+          wordSpans.forEach((w, i) =>
+            w.classList.toggle("active", i <= index)
+          );
+        }
+      });
+
+      ScrollTrigger.refresh();
+    }, 50); // 50–100ms is usually safe
   });
 
-  ScrollTrigger.create({
-    trigger: "#section1",
-    start: "top top",
-    end: `+=${wordSpans.length * 20}`,
-    scrub: true,
-    pin: "#section1",
-    anticipatePin: 1,
-    onUpdate: (self) => {
-      const index = Math.floor(self.progress * wordSpans.length);
-      wordSpans.forEach((w, i) =>
-        w.classList.toggle("active", i <= index)
-      );
-    }
-  });
+
+
+
+  // gsap.registerPlugin(ScrollTrigger);
+
+  // const textEl = document.getElementById("highlight-text");
+  // const words = textEl.textContent.split(" ");
+  // textEl.innerHTML = "";
+
+  // const wordSpans = words.map(word => {
+  //   const span = document.createElement("span");
+  //   span.className = "word";
+  //   span.textContent = word;
+  //   textEl.appendChild(span);
+  //   textEl.append(" ");
+  //   return span;
+  // });
+
+  // ScrollTrigger.create({
+  //   trigger: "#section1",
+  //   start: "top top",
+  //   end: `+=${wordSpans.length * 20}`,
+  //   scrub: true,
+  //   pin: "#section1",
+  //   anticipatePin: 1,
+  //   onUpdate: (self) => {
+  //     const index = Math.floor(self.progress * wordSpans.length);
+  //     wordSpans.forEach((w, i) =>
+  //       w.classList.toggle("active", i <= index)
+  //     );
+  //   }
+  // });
 
 </script>
 
