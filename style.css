@@ -84,12 +84,7 @@ a {
 }
 
 
-.fade-in {
-  opacity: 0;
-  animation: fadeInAnimation 1s ease-in forwards;
-}
 
-#cv {}
 
 #section1 {
   transition: none !important;
@@ -110,32 +105,6 @@ a {
   color: black;
 }
 
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes animateBackgroundSize {
-  0% {
-    opacity: 0%;
-    background-position: left;
-  }
-
-  50% {
-    background-position: left;
-  }
-
-  100% {
-    background-position: center;
-    opacity: 100%;
-  }
-}
-
 .stats-card {
   margin: auto;
   width: 95%;
@@ -154,10 +123,6 @@ a {
   color: #ffffff;
   text-wrap: nowrap;
   margin: 0;
-}
-
-svg {
-  display: inline-block;
 }
 
 @media (max-width: 768px) {
