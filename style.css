@@ -15,7 +15,7 @@ html {
 }
 
 * {
-  color: rgb(210, 210, 210);
+  color: rgb(255, 255, 255);
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   letter-spacing: 0.7px;
   transition: all 0.3s ease;
@@ -91,12 +91,13 @@ a {
 }
 
 .word {
-  color: rgb(130, 130, 130);
+  color: rgb(77, 77, 77);
   transition: color 0.2s ease;
 }
 
 .word.active {
   color: #fff;
+  transition: color 0.3s ease
 }
 
 ::selection {
