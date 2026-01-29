@@ -65,7 +65,7 @@
       <div class="max-md:mx-auto sm:mr-auto w-fit flex flex-col max-w-[500px] gap-y-12">
 
 
-        <p id="highlight-text">
+        <p>
           I am a web developer who loves problem-solving, coding challenges, and
           crafting minimalistic designs. Always eager to try out new
           things in web space and to comtribute to Open Source.
@@ -130,6 +130,16 @@
     <h1 class="max-md:mx-auto sm:ml-auto w-fit mb-10">Work</h1>
 
     <div class="max-md:mx-auto sm:mr-auto w-fit flex flex-col max-w-[500px] gap-y-12">
+      <h2> <a class="p-0 m-0" href="#">
+
+          Advicee Agency - AI-integrated university application and document tracking system.
+        </a>
+      </h2>
+      <p>
+        Built Next.js platform to digitize complex university application lifecycles. Designed high-density Logistics
+        Center with real-time status and cross-app allocation tools. Integrated AI to automate manual data retrieval and
+        university entity resolution, accelerating operational decision-making.
+      </p>
       <h2> <a class="p-0 m-0" href="https://t.me/ProtecoSharq_bot">
 
           Proteco Sharq - Telegram-bot e-commerce with admin panel
@@ -191,7 +201,7 @@
   </section>
 
   <footer class="mt-32 text-center" id="footer">
-    &copy; 2025 maxmud-dev.uz. All rights reserved.
+    &copy; 2026 maxmud-dev.uz. All rights reserved.
   </footer>
 </body>
 <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
@@ -268,76 +278,6 @@
   });
 
   window.scrollTo(0, 0); // force scroll to top immediately
-
-  window.addEventListener('load', () => {
-    // slight delay ensures scrollTo completes before pinning calculations
-    setTimeout(() => {
-      gsap.registerPlugin(ScrollTrigger);
-
-      const textEl = document.getElementById("highlight-text");
-      const words = textEl.textContent.split(" ");
-      textEl.innerHTML = "";
-
-      const wordSpans = words.map(word => {
-        const span = document.createElement("span");
-        span.className = "word";
-        span.textContent = word;
-        textEl.appendChild(span);
-        textEl.append(" ");
-        return span;
-      });
-
-      ScrollTrigger.create({
-        trigger: "#section1",
-        start: "top top",
-        end: `+=${wordSpans.length * 20}`,
-        scrub: true,
-        pin: "#section1",
-        anticipatePin: 1,
-        onUpdate: (self) => {
-          const index = Math.floor(self.progress * wordSpans.length);
-          wordSpans.forEach((w, i) =>
-            w.classList.toggle("active", i <= index)
-          );
-        }
-      });
-
-      ScrollTrigger.refresh();
-    }, 50); // 50–100ms is usually safe
-  });
-
-
-
-
-  // gsap.registerPlugin(ScrollTrigger);
-
-  // const textEl = document.getElementById("highlight-text");
-  // const words = textEl.textContent.split(" ");
-  // textEl.innerHTML = "";
-
-  // const wordSpans = words.map(word => {
-  //   const span = document.createElement("span");
-  //   span.className = "word";
-  //   span.textContent = word;
-  //   textEl.appendChild(span);
-  //   textEl.append(" ");
-  //   return span;
-  // });
-
-  // ScrollTrigger.create({
-  //   trigger: "#section1",
-  //   start: "top top",
-  //   end: `+=${wordSpans.length * 20}`,
-  //   scrub: true,
-  //   pin: "#section1",
-  //   anticipatePin: 1,
-  //   onUpdate: (self) => {
-  //     const index = Math.floor(self.progress * wordSpans.length);
-  //     wordSpans.forEach((w, i) =>
-  //       w.classList.toggle("active", i <= index)
-  //     );
-  //   }
-  // });
 
 </script>
 
