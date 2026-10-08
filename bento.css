@@ -1,0 +1,121 @@
+body{background:#e9edf2}.bento-header,.bento-shell,.bento-footer{width:min(1200px,calc(100% - 64px));margin:auto}.bento-header{height:100px;display:flex;align-items:center;justify-content:space-between}.grid-label{display:flex;justify-content:space-between;gap:20px;color:#626b79;font-size:12px;margin:12px 0 22px;letter-spacing:.6px}.bento-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:20px;align-items:start}.tile{border-radius:28px;background:#fff;overflow:hidden;min-width:0;box-shadow:0 4px 20px #24344b05;animation:arrive .65s both}.tile:nth-child(2){animation-delay:.07s}.tile:nth-child(3){animation-delay:.14s}.tile:nth-child(4){animation-delay:.21s}.tile:nth-child(5){animation-delay:.28s}.tile:nth-child(6){animation-delay:.35s}.tile summary{display:block;cursor:pointer;list-style:none;padding:28px}.tile summary::-webkit-details-marker{display:none}.card-heading{display:flex;justify-content:space-between;align-items:start;gap:15px}.tile h1,.tile h2{font-family:Manrope,Arial,sans-serif;line-height:1.15;letter-spacing:-1px;font-weight:600;margin:0}.tile h1{font-size:clamp(32px,4vw,54px)}.tile h2{font-size:27px}.tile p{font-size:16px;line-height:1.6;color:#667080;margin-top:12px;max-width:44ch}.expand{width:34px;height:34px;background:#00000009;border-radius:50%;display:grid;place-items:center;flex-shrink:0;font-size:24px;line-height:1;transition:transform .3s,background .3s}.tile[open] .expand{transform:rotate(45deg);background:#00000016}.tile summary:hover .expand{background:#00000018}.intro{grid-column:span 7;background:#fff;min-height:330px}.intro-mark{font-size:112px;font-weight:700;line-height:1;margin:38px 0 0;letter-spacing:-12px}.intro-mark span{font-size:70px;letter-spacing:0;color:#244fef;margin-left:16px}.advicee{grid-column:span 5;background:#244fef;color:#fff}.advicee p{color:#e4eaff}.advicee .expand{background:#ffffff22}.about{grid-column:span 4;background:#21242d;color:#fff}.about p{color:#bdc4d1}.about .expand{background:#ffffff22}.proteco{grid-column:span 4;background:#d8e8c7}.oygul{grid-column:span 4;background:#e0d9ef}.contact{grid-column:span 12;background:#f8fafc}.contact summary{display:flex;align-items:center;justify-content:space-between}.contact .card-heading{flex:1}.contact-mark{font-size:80px;line-height:1;color:#244fef;margin-left:35px}.skill-stack{display:flex;gap:8px;margin-top:50px;flex-wrap:wrap}.skill-stack span{border:1px solid #ffffff30;border-radius:14px;padding:14px 15px;font-size:18px}.reveal{overflow:hidden}.reveal-inner{padding:0 28px 28px}.reveal p{margin:0 0 18px}.reveal a{display:inline-block;text-decoration:underline;text-underline-offset:5px;font-size:15px}.reveal small{font-size:12px;opacity:.75}.contact-links{display:flex;flex-wrap:wrap;gap:16px 26px}.tile-preview{height:200px;position:relative;overflow:hidden;margin:24px -8px -28px;padding:20px 10px 0;border-radius:16px 16px 0 0}.tile-preview .sample{position:absolute;right:8px;top:0;font-size:10px;opacity:.75}.tile-preview .mock-scene{width:100%;transform:scale(.8);transform-origin:top center}.tile-preview .mock-window{min-height:260px}.tile-preview .mock-main{padding:15px}.tile-preview .mock-dashboard aside{padding:12px 8px}.tile-preview .mock-row{font-size:9px}.tile-preview .mock-phone{width:240px}.tile-preview .mock-chat{width:260px}.tile[open] .tile-preview{margin-bottom:20px}.bento-footer{display:flex;justify-content:space-between;gap:20px;color:#646e7e;font-size:13px;padding:30px 0 40px}.tile summary:focus-visible{outline:3px solid #9bafff;outline-offset:-5px;border-radius:28px}@keyframes arrive{from{opacity:0;transform:translateY(20px) scale(.97)}to{opacity:1;transform:none}}@media(max-width:850px){.intro,.advicee{grid-column:span 6}.about,.proteco,.oygul{grid-column:span 6}.contact{grid-column:span 6}.contact summary{display:block}.contact-mark{display:block;margin:25px 0 0}.grid-label{font-size:11px}.tile summary{padding:23px}.reveal-inner{padding:0 23px 23px}}@media(max-width:580px){.bento-header,.bento-shell,.bento-footer{width:calc(100% - 32px)}.bento-header{height:76px}.grid-label{display:block;margin-top:0}.grid-label>span{display:block;margin-top:7px}.bento-grid{grid-template-columns:1fr;gap:16px}.tile{grid-column:1;border-radius:23px}.intro{min-height:0}.intro-mark{font-size:84px;margin-top:22px}.intro-mark span{font-size:54px}.tile h1{font-size:36px}.tile h2{font-size:25px}.tile-preview{height:210px}.tile-preview .mock-window{width:100%;transform:none;flex-shrink:1}.skill-stack{margin-top:24px}.contact summary{display:flex}.contact-mark{margin:0 0 0 16px;font-size:50px}.bento-footer{flex-wrap:wrap}.tile p{font-size:15px}}@media(prefers-reduced-motion:reduce){.tile{animation:none}.expand{transition:none}}
+
+/* Full-viewport project viewer. Native dialog traps focus and makes the grid inert. */
+.card-viewer{position:fixed;inset:0;width:100%;max-width:none;height:100%;height:100dvh;max-height:none;margin:0;padding:0;border:0;border-radius:0;overflow:auto;overscroll-behavior:contain;color:var(--ink);background:#fff;min-height:0;box-sizing:border-box}.card-viewer::backdrop{background:transparent}.viewer-close{position:fixed;top:20px;right:24px;z-index:2;width:48px;height:48px;border:1px solid #8885;border-radius:50%;background:#ffffffec;color:#21242d;font-size:32px;line-height:1;cursor:pointer}.viewer-content{width:min(1000px,100%);margin:0 auto;padding:90px 48px 60px}.viewer-content h1,.viewer-content h2{font-size:clamp(34px,5vw,68px);line-height:1.15;letter-spacing:-1.5px;margin:0}.viewer-content .card-heading p{font-size:20px;max-width:650px;margin-top:20px}.viewer-content .reveal-inner{padding:35px 0 0}.viewer-content .reveal-inner p{font-size:19px;line-height:1.8;max-width:720px}.viewer-content .tile-preview{height:380px;margin:40px 0 0;padding:30px 20px 0;background:#ffffff12;border-radius:22px}.viewer-content .mock-scene{max-width:650px;margin:auto;transform:none}.viewer-content .mock-window{width:100%;transform:none}.viewer-content .intro-mark{margin:40px 0}.viewer-content .skill-stack{margin:35px 0}.viewer-content .contact-mark{display:block;margin:35px 0}.card-viewer.advicee{background:#244fef;color:#fff}.card-viewer.about{background:#21242d;color:#fff}.card-viewer.proteco{background:#d8e8c7}.card-viewer.oygul{background:#e0d9ef}.card-viewer.contact{background:#f8fafc}.card-viewer .contact-links{margin-top:25px}.card-viewer a:focus-visible{outline:3px solid currentColor;outline-offset:5px}@media(max-width:580px){.viewer-content{padding:85px 24px 40px}.viewer-close{top:16px;right:16px}.viewer-content .card-heading p,.viewer-content .reveal-inner p{font-size:17px}.viewer-content .tile-preview{height:300px;margin-top:28px;padding-inline:0}.viewer-content .mock-main{padding:12px}.viewer-content .mock-dashboard aside{font-size:10px}.viewer-content .mock-row{font-size:8px}}
+
+html{scrollbar-gutter:stable}.card-viewer{transform:none;transform-origin:center}.card-viewer .viewer-content{will-change:auto}
+
+/* A composed mobile mosaic, not a stack of desktop cards. */
+@media(max-width:580px){
+ .bento-header,.bento-shell,.bento-footer{width:calc(100% - 24px)}
+ .bento-header{height:66px}.grid-label{margin:0 2px 16px}.grid-label>span:first-child{font-size:10px;letter-spacing:1px}.grid-label>span:last-child{font-size:12px;letter-spacing:0}
+ .bento-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-areas:"intro intro" "advicee about" "advicee proteco" "oygul contact";gap:10px;align-items:stretch}
+ .bento-grid>.tile{grid-column:auto;border-radius:22px;min-width:0;min-height:0;position:relative}
+ .bento-grid>.intro{grid-area:intro}.bento-grid>.advicee{grid-area:advicee}.bento-grid>.about{grid-area:about}.bento-grid>.proteco{grid-area:proteco}.bento-grid>.oygul{grid-area:oygul}.bento-grid>.contact{grid-area:contact}
+ .bento-grid>.tile>summary{padding:18px 15px;min-height:170px;height:100%;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}
+ .bento-grid .card-heading{display:block;padding-bottom:28px}.bento-grid .card-heading p{display:none}
+ .bento-grid .tile h2{font-size:clamp(18px,4.6vw,24px);letter-spacing:-.65px;line-height:1.2;overflow-wrap:break-word}
+ .bento-grid .expand{position:absolute;right:12px;bottom:12px;width:28px;height:28px;font-size:22px;z-index:1}
+ .bento-grid>.intro>summary{min-height:175px;justify-content:center;padding:24px 95px 24px 22px}
+ .bento-grid .intro .card-heading{padding:0}.bento-grid .intro h1{font-size:clamp(27px,7.3vw,38px);letter-spacing:-1.1px;max-width:9ch}
+ .bento-grid .intro .card-heading p{display:block;font-size:14px;line-height:1.4;margin-top:12px;max-width:23ch}
+ .bento-grid .intro-mark{position:absolute;right:23px;top:28px;margin:0;font-size:54px;letter-spacing:-5px}.bento-grid .intro-mark span{display:block;margin:9px 0 0 8px;font-size:40px}
+ .bento-grid>.advicee>summary{min-height:350px;justify-content:flex-start}
+ .bento-grid .advicee .tile-preview{position:absolute;top:82px;left:12px;right:0;height:245px;margin:0;padding:25px 0 0;border-radius:12px 0 0 0}
+ .bento-grid .advicee .sample{left:0;right:auto;font-size:10px}
+ .bento-grid .advicee .mock-scene{width:390px;transform:scale(.58);transform-origin:top left}
+ .bento-grid .advicee .mock-window{width:390px;transform:none}.bento-grid .advicee .mock-main{padding:15px}
+ .bento-grid .proteco .tile-preview,.bento-grid .oygul .tile-preview{height:75px;padding:0;margin:0 0 12px;overflow:hidden;border-radius:10px}
+ .bento-grid .proteco .sample,.bento-grid .oygul .sample{display:none}
+ .bento-grid .proteco .mock-scene{width:240px;transform:scale(.55);transform-origin:top left}.bento-grid .proteco .mock-phone{padding-top:9px}.bento-grid .proteco .phone-notch{display:none}
+ .bento-grid .oygul .mock-scene{width:260px;transform:scale(.52);transform-origin:top left}
+ .bento-grid .skill-stack{margin:0 0 8px;gap:5px}.bento-grid .skill-stack span{padding:6px 7px;font-size:12px;border-radius:8px}
+ .bento-grid .contact-mark{font-size:56px;line-height:1;margin:0 0 10px;color:#244fef}
+ .bento-footer{font-size:12px;gap:9px;padding-top:24px}
+}
+
+
+.bento-grid>.work-collection{grid-column:span 5;background:#f5ce75}.bento-grid>.advicee{grid-column:span 8}.bento-grid>.about{grid-column:span 4}.bento-grid>.proteco,.bento-grid>.oygul,.bento-grid>.contact{grid-column:span 4}.work-stack{display:flex;margin:32px 0 8px;padding-left:8px}.work-stack span{display:grid;place-items:center;width:84px;height:94px;border:3px solid #f5ce75;border-radius:14px;background:#244fef;color:white;font-size:22px;font-weight:600;transform:rotate(-9deg)}.work-stack span+span{margin-left:-18px;transform:rotate(3deg);background:#21242d}.work-stack span:last-child{transform:rotate(12deg);background:#e0d9ef;color:#21242d}.card-viewer.work-collection{background:#f7f8fb}.work-list{display:grid;gap:32px}.work-entry{display:grid;grid-template-columns:210px 1fr;gap:28px;padding-bottom:32px;border-bottom:1px solid #d9dde3}.work-cover{display:grid;place-items:center;border-radius:20px;min-height:180px;font-size:25px;font-weight:600;letter-spacing:-1px}.work-cover.advicee{background:#244fef;color:white}.work-cover.proteco{background:#d8e8c7}.work-cover.oygul{background:#e0d9ef}.work-entry h3{font-size:24px;margin:0 0 14px}.viewer-content .work-entry p{font-size:16px;margin:0 0 12px;line-height:1.65}@media(min-width:581px) and (max-width:850px){.bento-grid>.tile{grid-column:span 6}}@media(max-width:580px){.bento-grid{grid-template-areas:"intro intro" "work about" "advicee proteco" "advicee oygul" "contact contact"}.bento-grid>.work-collection{grid-area:work;grid-column:auto}.bento-grid>.advicee,.bento-grid>.about,.bento-grid>.proteco,.bento-grid>.oygul,.bento-grid>.contact{grid-column:auto}.bento-grid .work-stack{margin:8px 0 20px;padding-left:2px}.bento-grid .work-stack span{width:47px;height:58px;font-size:15px;border-width:2px;border-radius:9px}.bento-grid .work-stack span+span{margin-left:-14px}.bento-grid>.contact>summary{min-height:110px;flex-direction:row;align-items:center;padding-right:55px}.bento-grid .contact .card-heading{padding:0}.bento-grid .contact-mark{margin:0}.work-entry{grid-template-columns:1fr;gap:20px}.work-cover{min-height:150px}}
+
+/* Contact spans the complete grid at every breakpoint. */
+.bento-grid>.tile.contact{grid-column:1 / -1}
+
+
+.simple-banner{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 14px;padding:12px 18px;background:#fff;color:#434c5a;font-size:14px;line-height:1.5}.simple-banner a{color:#2046cf;text-decoration:underline;text-underline-offset:3px;font-weight:600;padding:3px 0}
+
+/* Keep the desktop composition compact and remove unused grid cells. */
+@media(min-width:851px){
+ .bento-header,.bento-shell,.bento-footer{width:min(1080px,calc(100% - 64px))}
+ .bento-header{height:80px}.grid-label{margin:4px 0 16px}
+ .bento-grid{grid-template-columns:repeat(4,minmax(0,1fr));grid-template-areas:"intro intro work about" "advicee advicee proteco oygul" "contact contact contact contact";gap:14px;align-items:stretch}
+ .bento-grid>.tile{grid-column:auto;min-height:0;border-radius:24px}
+ .bento-grid>.intro{grid-area:intro}.bento-grid>.work-collection{grid-area:work}.bento-grid>.about{grid-area:about}.bento-grid>.advicee{grid-area:advicee}.bento-grid>.proteco{grid-area:proteco}.bento-grid>.oygul{grid-area:oygul}.bento-grid>.tile.contact{grid-area:contact;grid-column:1/-1}
+ .bento-grid>.tile>summary{position:relative;box-sizing:border-box;height:100%;padding:24px;min-height:250px;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}
+ .bento-grid .card-heading{gap:10px}.bento-grid .card-heading h2{font-size:23px;letter-spacing:-.7px}.bento-grid .intro h1{font-size:40px;letter-spacing:-1.6px;max-width:12ch}
+ .bento-grid .card-heading p{font-size:14px;line-height:1.5;margin-top:10px}.bento-grid .intro .card-heading p{max-width:30ch;font-size:16px}
+ .bento-grid .expand{width:28px;height:28px;font-size:21px}
+ .bento-grid .intro-mark{font-size:65px;letter-spacing:-6px;margin-top:20px;line-height:1}.bento-grid .intro-mark span{font-size:46px;margin-left:12px}
+ .bento-grid .work-stack{margin:22px 0 6px}.bento-grid .work-stack span{width:56px;height:66px;font-size:17px;border-width:2px}
+ .bento-grid .skill-stack{gap:6px;margin-top:24px}.bento-grid .skill-stack span{font-size:13px;padding:10px;border-radius:10px}
+ .bento-grid>.advicee>summary,.bento-grid>.proteco>summary,.bento-grid>.oygul>summary{height:290px;min-height:290px;justify-content:flex-start}
+ .bento-grid .advicee .card-heading p,.bento-grid .proteco .card-heading p,.bento-grid .oygul .card-heading p{display:none}
+ .bento-grid .tile-preview{flex:1;min-height:0;height:auto;margin:18px -8px -24px;padding-top:22px}
+ .bento-grid .tile-preview .mock-scene{transform:scale(.72);transform-origin:top center}.bento-grid .advicee .tile-preview .mock-scene{transform:scale(.82)}
+ .bento-grid>.contact>summary{flex-direction:row;align-items:center;min-height:118px;padding:22px 26px}.bento-grid .contact .card-heading{flex:1;align-items:center}.bento-grid .contact .card-heading p{margin-top:6px}.bento-grid .contact-mark{font-size:58px;margin:0 0 0 26px}
+ .bento-footer{padding:24px 0 30px}
+}
+
+/* Desktop focal card with a surrounding mosaic. */
+@media(min-width:851px){
+ .bento-header,.bento-shell,.bento-footer{width:min(1180px,calc(100% - 64px))}
+ .bento-grid{grid-template-columns:minmax(0,1fr) minmax(0,1.25fr) minmax(0,1.25fr) minmax(0,1fr);grid-template-rows:140px 165px 165px auto;grid-template-areas:"advicee work about proteco" "advicee intro intro proteco" "oygul intro intro proteco" "contact contact contact contact";gap:12px}
+ .bento-grid>.tile>summary{min-height:0;height:100%;padding:20px}
+ .bento-grid>.advicee>summary,.bento-grid>.proteco>summary,.bento-grid>.oygul>summary{height:100%;min-height:0}
+ .bento-grid>.intro>summary{justify-content:center;padding:38px 42px;background:#fff}
+ .bento-grid .intro .card-heading{display:block;position:relative;z-index:1;max-width:85%}
+ .bento-grid .intro h1{font-size:clamp(38px,4.4vw,58px);max-width:12ch;letter-spacing:-2px}
+ .bento-grid .intro .card-heading p{font-size:17px;line-height:1.5;max-width:29ch;margin-top:20px}
+ .bento-grid .intro .expand{position:absolute;right:-50px;top:0}
+ .bento-grid .intro-mark{position:absolute;right:26px;bottom:24px;font-size:55px;margin:0;color:#dee3ed;letter-spacing:-5px}
+ .bento-grid .intro-mark span{font-size:37px;color:#244fef}
+ .bento-grid .work-collection .card-heading p,.bento-grid .about .card-heading p{display:none}
+ .bento-grid .work-stack{position:absolute;bottom:12px;left:20px;margin:0}.bento-grid .work-stack span{width:43px;height:48px;font-size:13px;border-radius:9px}
+ .bento-grid .skill-stack{margin:15px 0 0;gap:5px}.bento-grid .skill-stack span{padding:7px 9px;font-size:12px}
+ .bento-grid .work-collection h2,.bento-grid .about h2{font-size:21px}
+ .bento-grid .tile-preview{margin:15px -5px -20px;padding-top:20px}
+ .bento-grid .proteco .tile-preview{margin-top:35px}.bento-grid .proteco .tile-preview .mock-scene{transform:scale(.83);transform-origin:top center}
+ .bento-grid .oygul .tile-preview{position:absolute;top:50px;left:15px;right:15px;height:120px;margin:0;opacity:.9}
+ .bento-grid .oygul .tile-preview .mock-scene{transform:scale(.6);transform-origin:top center}
+ .bento-grid .oygul .sample{display:none}
+ .bento-grid>.contact>summary{min-height:100px;padding:20px 26px}
+}
+
+/* Center the close icon geometrically, independent of font metrics. */
+.viewer-close{display:grid;place-items:center;padding:0;font-size:0;line-height:0;box-sizing:border-box}
+.viewer-close::before,.viewer-close::after,.prompt-close::before,.prompt-close::after{content:'';position:absolute;left:50%;top:50%;width:20px;height:1.5px;border-radius:1px;background:currentColor;transform:translate(-50%,-50%) rotate(45deg)}
+.viewer-close::after,.prompt-close::after{transform:translate(-50%,-50%) rotate(-45deg)}
+
+/* Geometric expand icons, consistent with the close control. */
+.bento-grid .tile .expand{display:grid;place-items:center;font-size:0;line-height:0}
+.bento-grid .tile .expand::before,.bento-grid .tile .expand::after{content:'';grid-area:1 / 1;width:12px;height:1.5px;border-radius:1px;background:currentColor}
+.bento-grid .tile .expand::after{transform:rotate(90deg)}
+
+.bento-grid .tile .expand{grid-template-columns:1fr;grid-template-rows:1fr;align-content:center;justify-content:center}
+
+/* Animate a plain composited surface, never a clip over the content tree. */
+.card-viewer.card-viewer{background:transparent;isolation:isolate;clip-path:none}
+.viewer-surface{position:fixed;inset:0;pointer-events:none;z-index:-1;transform-origin:top left;will-change:transform}
+.card-viewer .viewer-content{position:relative;z-index:0}.card-viewer .viewer-close{z-index:2}
+@media(prefers-reduced-motion:reduce){.viewer-surface{will-change:auto}}
+
+/* In-flow suggestion slides down and makes room for itself. */
+.prompt-slot{overflow:hidden;overflow:clip}
+.simple-banner{position:relative;inset:auto;transform:none;width:100%;max-width:none;box-sizing:border-box;border:0;border-bottom:1px solid #dde1e8;border-radius:0;box-shadow:none;padding:14px 54px 14px 20px;text-align:center;align-items:center}
+.simple-banner[hidden]{display:none}
+.prompt-close{position:absolute;right:8px;top:50%;transform:translateY(-50%);display:grid;place-items:center;width:36px;height:36px;padding:0;border:0;border-radius:50%;background:transparent;color:inherit;cursor:pointer}
+.prompt-close:hover{background:#edf0f5}.prompt-close:focus-visible{outline:2px solid #244fef;outline-offset:2px}
+
+/* Align the prompt with the portfolio at each breakpoint. */
+.simple-banner{width:min(1200px,calc(100% - 64px));margin-inline:auto;border-radius:0 0 16px 16px}
+@media(min-width:851px){.simple-banner{width:min(1180px,calc(100% - 64px))}}
+@media(max-width:580px){.simple-banner{width:calc(100% - 24px)}}
