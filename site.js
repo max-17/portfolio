@@ -418,6 +418,36 @@ const translations = {
     "uz": "Uning istaklari asosida, birgalikda tanlangan dizaynga ega shaxsiy portfolio sayti yaratildi. Dizayn va dasturlash ishlarini o‘zim bajardim.",
     "ru": "Получился личный сайт-портфолио с дизайном, выбранным совместно и основанным на его предпочтениях. Я отвечал за дизайн и разработку.",
     "en": "A personal portfolio website built around his preferences and the design we chose together. I handled both the design and development."
+  },
+  "adScreenDashboard": {
+    "uz": "Umumiy nazorat paneli",
+    "ru": "Общая панель управления",
+    "en": "Dashboard overview"
+  },
+  "adScreenTasks": {
+    "uz": "Vazifalarni kuzatish",
+    "ru": "Отслеживание задач",
+    "en": "Task management"
+  },
+  "adScreenProcessing": {
+    "uz": "Hujjatlarni qayta ishlash",
+    "ru": "Обработка документов",
+    "en": "Document processing"
+  },
+  "deviceDesktop": {
+    "uz": "Kompyuter",
+    "ru": "Компьютер",
+    "en": "Desktop"
+  },
+  "deviceMobile": {
+    "uz": "Mobil",
+    "ru": "Мобильный",
+    "en": "Mobile"
+  },
+  "adPrivacy": {
+    "uz": "Maxfiy ma’lumotlar xiralashtirilgan.",
+    "ru": "Конфиденциальные данные размыты.",
+    "en": "Sensitive information has been blurred."
   }
 };
 const languageButtons = document.querySelectorAll('[data-lang]');
@@ -488,8 +518,12 @@ if (tiles.length) {
     const visual = tile.querySelector('summary').querySelector(
       '.tile-preview,.intro-mark,.skill-stack,.contact-mark'
     );
-    if (visual) content.append(visual.cloneNode(true));
-    content.append(tile.querySelector('.reveal-inner').cloneNode(true));
+    const gallery = tile.querySelector('.project-device-gallery');
+    if (gallery) content.append(gallery.cloneNode(true));
+    else if (visual) content.append(visual.cloneNode(true));
+    const details = tile.querySelector('.reveal-inner').cloneNode(true);
+    details.querySelector('.project-device-gallery')?.remove();
+    content.append(details);
     prepared.set(tile, {language, content});
     return content;
   }
