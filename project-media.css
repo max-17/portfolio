@@ -1118,3 +1118,23 @@
  .project-device-pair figcaption { font-size: 12px; }
  .bento-grid>.tile.advicee .advicee-screenshot { top: 64px; left: 12px; right: 12px; padding: 0; }
 }
+
+/* Fill the tall Advicee card with a right-cropped desktop preview. */
+.bento-grid>.tile.advicee .advicee-screenshot {
+  right: 0;
+  bottom: 20px;
+  border-radius: 12px 0 0 0;
+}
+.bento-grid>.tile.advicee .advicee-screenshot img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: left top;
+}
+@media(max-width:580px) {
+  .bento-grid>.tile.advicee .advicee-screenshot {
+    right: 0;
+    bottom: 12px;
+  }
+}
