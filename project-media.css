@@ -1100,11 +1100,11 @@
 .project-device-gallery { margin: 32px 0; }
 .project-device-set { margin: 0 0 36px; }
 .project-device-set h3 { font-size: 22px; line-height: 1.35; margin: 0 0 16px; }
-.project-device-pair { display: grid; grid-template-columns: minmax(0,3.8fr) minmax(0,1fr); align-items: start; gap: 16px; max-width: 600px; }
+.project-device-pair { display: grid; grid-template-columns: minmax(0,3.8fr) minmax(0,1fr); align-items: start; gap: 20px; max-width: 800px; margin-inline: auto; }
 .project-device-pair figure { margin: 0; min-width: 0; }
 .project-device-pair figcaption { font-size: 13px; margin-bottom: 8px; font-weight: 600; }
 .project-device-pair a { display: block; }
-.project-device-pair img { display: block; width: 100%; height: auto; max-height: 280px; object-fit: contain; object-position: top left; border-radius: 10px; }
+.project-device-pair img { display: block; width: 100%; height: auto; object-fit: contain; object-position: top left; border-radius: 10px; }
 .screenshot-note { font-size: 13px; opacity: .85; }
 .simple-project .project-device-set { padding: 0; border: 0; }
 .bento-grid>.tile.advicee .advicee-screenshot { top: 76px; left: 20px; right: 20px; bottom: 0; height: auto; padding: 0; margin: 0; position: absolute; border-radius: 12px 12px 0 0; }
