@@ -448,6 +448,21 @@ const translations = {
     "uz": "Maxfiy ma’lumotlar xiralashtirilgan.",
     "ru": "Конфиденциальные данные размыты.",
     "en": "Sensitive information has been blurred."
+  },
+  "adScreenFinance": {
+    "uz": "Moliyani boshqarish",
+    "ru": "Управление финансами",
+    "en": "Finance management"
+  },
+  "adScreenWorkspace": {
+    "uz": "Talabaning ish maydoni",
+    "ru": "Рабочее пространство студента",
+    "en": "Student workspace"
+  },
+  "adScreenStudents": {
+    "uz": "Talabalar ro‘yxati",
+    "ru": "Каталог студентов",
+    "en": "Student directory"
   }
 };
 const languageButtons = document.querySelectorAll('[data-lang]');
