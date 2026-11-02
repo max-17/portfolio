@@ -616,6 +616,12 @@ if (tiles.length) {
     viewer.replaceChildren(surface, content, close);
     previousOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
+    // Load project media only when the visitor opens this project.
+    content.querySelectorAll('img[data-src], img[data-full-src]').forEach(image => {
+      image.src = image.dataset.fullSrc || image.dataset.src;
+      delete image.dataset.fullSrc;
+      delete image.dataset.src;
+    });
     viewer.showModal();
     surface.style.transform = reduced.matches ? 'none' : cardTransform();
     viewer.scrollTop = 0;
